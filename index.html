@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Developer Profile</title>
   </head>
   <body>
     <header>
-      <h1>Jawad Sadiq</h1>
-      <p>Frontend developer</p>
+      <h1>Jawad Sadiq Frontend developer</h1>
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
@@ -20,13 +20,17 @@
     </header>
     <main>
       <section id="about">
-        <h2>About Me</h2>
-        <p>
-          Hello! I'm a passionate developer with experience in web development
-          and software engineering. I enjoy creating efficient and user-friendly
-          applications.
-        </p>
-        <img src="assets/jawad.jpg" alt="Jawad Sadiq" />
+        <div class="hero">
+          <img src="assets/jawad.jpg" alt="Jawad Sadiq" />
+          <div>
+            <h2>About Me</h2>
+            <p>
+              Hello! I'm a passionate developer with experience in web
+              development and software engineering. I enjoy creating efficient
+              and user-friendly applications.
+            </p>
+          </div>
+        </div>
       </section>
       <section id="skills">
         <h2>Skills</h2>
@@ -39,23 +43,27 @@
       </section>
       <section id="projects">
         <h2>Projects</h2>
-        <article>
-          <h3>Project 1: Portfolio Website</h3>
-          <p>A personal portfolio website showcasing my projects and skills.</p>
-          <a href="#">View Project</a>
-        </article>
-        <article>
-          <h3>Project 2: To-Do List App</h3>
-          <p>A simple to-do list application built with React.</p>
-          <a href="#">View Project</a>
-        </article>
-        <article>
-          <h3>Project 3: Weather App</h3>
-          <p>
-            An application that provides weather forecasts using a public API.
-          </p>
-          <a href="#">View Project</a>
-        </article>
+        <div class="projects-grid">
+          <article>
+            <h3>Project 1: Portfolio Website</h3>
+            <p>
+              A personal portfolio website showcasing my projects and skills.
+            </p>
+            <a href="#">View Project</a>
+          </article>
+          <article>
+            <h3>Project 2: To-Do List App</h3>
+            <p>A simple to-do list application built with React.</p>
+            <a href="#">View Project</a>
+          </article>
+          <article>
+            <h3>Project 3: Weather App</h3>
+            <p>
+              An application that provides weather forecasts using a public API.
+            </p>
+            <a href="#">View Project</a>
+          </article>
+        </div>
       </section>
       <section id="contact">
         <h2>Contact</h2>
